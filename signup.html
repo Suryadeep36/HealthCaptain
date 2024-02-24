@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page for Health Caption</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+
+<body>
+
+    <h2>Sign Up</h2>
+    <hr><br>
+    <form method="post" action="/signup">
+        <div class="name">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name Here" required>
+        </div><br>
+        <div class="email">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email Id" required>
+        </div><br>
+
+        <div class="password">
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+        </div><br>
+
+
+        <div class="birthdate">
+            <label for="birthdate">Date of birth</label><br>
+            <input type="date" name="birthdate" id="birthdate" required>
+        </div><br>
+
+        <div class="gender">
+            <label for="gender">Select gender</label><br>
+
+            <div class="custom-radio">
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="male" class="radio-label"></label>
+            </div>
+            <span class="gender-label">Male</span>
+
+            <div class="custom-radio">
+                <input type="radio" name="gender" id="female" value="female" required>
+                <label for="female" class="radio-label"></label>
+            </div>
+            <span class="gender-label">Female</span>
+
+            <div class="custom-radio">
+                <input type="radio" name="gender" id="other" value="other" required>
+                <label for="other" class="radio-label"></label>
+            </div>
+            <span class="gender-label">Other</span>
+        </div><br>
+
+        <div class="signup">
+            <input type="submit" value="Signup">
+        </div>
+
+    </form> 
+</body>
+
+</html>
